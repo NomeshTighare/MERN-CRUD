@@ -12,7 +12,7 @@ app.use(cors());
 app.use('/user',route);
 const PORT = 8000;
 
-const URL ='mongodb+srv://user:user@userdata.9ju6z.mongodb.net/CRUD?retryWrites=true&w=majority'
+const URL =''
 
 mongoose.connect(URL,{useNewUrlParser: true , useUnifiedTopology: true}).then(()=>{
     app.listen(PORT, () =>{
